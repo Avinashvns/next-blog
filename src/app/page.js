@@ -1,7 +1,9 @@
 'use client'
+import { useState } from "react";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [name,setName]=useState("Avi")
   // make function
   const apple=()=>{
     alert("Fruit")
@@ -12,7 +14,7 @@ export default function Home() {
   }
   return (
     <main className={styles.main}>
-      <h1>Home Page</h1>
+      <h1>Home Page with {name}</h1>
 
       <h1>Event Calling</h1>
       <div>
