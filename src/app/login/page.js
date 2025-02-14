@@ -9,7 +9,7 @@ export default function Login(){
     }
     return(
         <>
-            <h1>Login Page</h1>
+            <h1 className="heading" >Login Page</h1>
             <br/><br/>
             {/* <Link href={"/login/studentlogin"}>Go To Student Login page</Link> */}
             <button onClick={()=>navigate("/studentlogin")}>Function Navigate Login Page</button>
