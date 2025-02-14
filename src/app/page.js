@@ -20,6 +20,8 @@ export default function Home() {
       <button onClick={()=>router.push("/login")}>Navigate Login Page</button>
       <br/><br/>
       <button onClick={()=>navigate("/login")}>Navigate with function to Login Page</button>
+      <br/><br/>
+      <button onClick={()=>navigate("/studentlist")}>Student List</button>
     </main>
   )
 }
