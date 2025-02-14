@@ -12,7 +12,9 @@ export default function Login(){
             <h1 className="heading" >Login Page</h1>
             <br/><br/>
             {/* <Link href={"/login/studentlogin"}>Go To Student Login page</Link> */}
-            <button onClick={()=>navigate("/studentlogin")}>Function Navigate Login Page</button>
+            <button onClick={()=>navigate("/studentlogin")}>Function Navigate Student Login Page</button>
+            <br/><br/>
+            <button onClick={()=>navigate("/teacherlogin")}>Function Navigate Teacher Login Page</button>
             <br/><br/>
             <Link href={"/"}>Go To Home page</Link>
 
