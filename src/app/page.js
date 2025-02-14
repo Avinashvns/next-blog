@@ -22,6 +22,9 @@ export default function Home() {
       <button onClick={()=>navigate("/login")}>Navigate with function to Login Page</button>
       <br/><br/>
       <button onClick={()=>navigate("/studentlist")}>Student List</button>
+      <br/><br/>
+      <h1>Study Page for learing Catch all Segment</h1>
+      <button onClick={()=>navigate("/study")}>Study Page</button>
     </main>
   )
 }
