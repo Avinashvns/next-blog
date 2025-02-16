@@ -1,3 +1,5 @@
+import Product from "./product";
+
 async function fetchData() {  // ✅ Define async function inside useEffect
     let response = await fetch("https://dummyjson.com/products");
     let data = await response.json();
@@ -11,7 +13,10 @@ export default async function ProductList(){
             <h1>Product List</h1>
             {
                 product.map((item)=>(
-                    <h3 key={item.id}>Product Name : {item.title}</h3>
+                    <div key={item.id} >
+                        <h3 >Product Name : {item.title}</h3>
+                        <Product />
+                    </div>
                 ))
             }
         </>
