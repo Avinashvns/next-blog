@@ -15,7 +15,7 @@ export default async function ProductList(){
                 product.map((item)=>(
                     <div key={item.id} >
                         <h3 >Product Name : {item.title}</h3>
-                        <Product />
+                        <Product price={item.price}/>
                     </div>
                 ))
             }
